@@ -1,4 +1,4 @@
-package com.lizhen.springboot.service;
+package com.lizhen.springboot.redis.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.ListOperations;

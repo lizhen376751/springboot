@@ -1,6 +1,6 @@
-package com.lizhen.springboot.controller;
+package com.lizhen.springboot.redis.controller;
 
-import com.lizhen.springboot.service.PackageRedis;
+import com.lizhen.springboot.redis.service.PackageRedis;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
