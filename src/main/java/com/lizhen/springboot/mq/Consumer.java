@@ -24,9 +24,13 @@ public class Consumer {
             int i = 1 / 0;
             //伪代码耗时15秒
 //			Thread.sleep(15000l);
+            //获取全局id，主要解决MQ重试机制，避免重复消费的问题
             String jmsMessageID = textMessage.getJMSMessageID();
+            //获取消息的日期戳，每次消息的日期戳都不同
+            long jmsTimestamp = textMessage.getJMSTimestamp();
             //网络延迟情况下，第二次消费过来，应该使用全局ID该消息是否被消费。
 //			if(jmsMessageID==缓存里面){
+            //表示手动进行签收。
 //				textMessage.acknowledge();// 避免第三次重试。
 //			}
             // 消費成功
