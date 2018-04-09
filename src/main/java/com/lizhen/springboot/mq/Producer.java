@@ -16,7 +16,7 @@ import javax.jms.Queue;
  */
 
 @Component
-@EnableScheduling
+//@EnableScheduling
 public class Producer {
     @Autowired
     private JmsMessagingTemplate jmsMessagingTemplate;
@@ -26,7 +26,7 @@ public class Producer {
     /**
      * 开启定时任务
      */
-    @Scheduled(fixedDelay = 3000)
+//    @Scheduled(fixedDelay = 3000)
     public void send() {
         String reuslt = System.currentTimeMillis() + "---测试消息";
         System.out.println("reuslt:" + reuslt);

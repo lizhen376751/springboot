@@ -4,5 +4,3 @@ spring:
     user: admin
     password: admin
 queue: springboot-queue
-server:
-  port: 8080

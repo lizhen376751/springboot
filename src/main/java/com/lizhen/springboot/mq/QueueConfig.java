@@ -16,7 +16,9 @@ import org.springframework.jms.core.JmsTemplate;
 
 
 /**
- * Created by Administrator on 2018/4/8 0008.
+ *
+ * ActiveMQ的设置
+ * Created by lizhen on 2018/4/8 0008.
  */
 @Configuration
 public class QueueConfig {
