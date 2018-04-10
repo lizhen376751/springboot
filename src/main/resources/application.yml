@@ -3,4 +3,13 @@ spring:
     broker-url: tcp://127.0.0.1:61616
     user: admin
     password: admin
+  application:
+        name: service-member
 queue: springboot-queue
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+
+

@@ -36,8 +36,8 @@ public class XxlJobConfig {
 
     @Value("${xxl.job.accessToken}")
     private String accessToken;
-
-    @Bean(initMethod = "start", destroyMethod = "destroy")
+//防止项目启动报错暂时注释
+//    @Bean(initMethod = "start", destroyMethod = "destroy")
     public XxlJobExecutor xxlJobExecutor() {
         logger.info(">>>>>>>>>>> xxl-job config init.==============init方法执行");
         XxlJobExecutor xxlJobExecutor = new XxlJobExecutor();

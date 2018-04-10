@@ -14,8 +14,8 @@ import javax.jms.TextMessage;
 @Component
 public class Consumer {
     private int count = 0;
-
-    @JmsListener(destination = "${queue}")
+//防止项目启动报错暂时注释
+//    @JmsListener(destination = "${queue}")
     public void receive(TextMessage textMessage, Session session) {
         try {
             String text = textMessage.getText();
