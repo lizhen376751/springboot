@@ -1,12 +1,19 @@
+#配置文件暂时不用
 spring:
+  zipkin:
+#zipkin 服务追踪中心的地址
+    base-url: http://localhost:8766
   activemq:
+#MQ的地址
     broker-url: tcp://127.0.0.1:61616
     user: admin
     password: admin
   application:
         name: service-8761
+#配置的MQ消息对列的名称
 queue: springboot-queue
 
+#配置eureka注册中心的地址
 eureka:
   client:
     serviceUrl:
