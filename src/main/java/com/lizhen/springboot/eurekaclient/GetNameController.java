@@ -10,13 +10,14 @@ import java.util.ArrayList;
  */
 @RestController
 public class GetNameController {
-    @RequestMapping("/getName")
-    public ArrayList<String> getName(){
-        ArrayList<String> arrayList = new ArrayList<String>();
-        arrayList.add("lizhen1");
-        arrayList.add("lizhen2");
-        arrayList.add("lizhen3");
-        arrayList.add("lizhen4");
-        return arrayList;
+    @RequestMapping("/get8761")
+    public String getName(){
+//        ArrayList<String> arrayList = new ArrayList<String>();
+//        arrayList.add("lizhen1");
+//        arrayList.add("lizhen2");
+//        arrayList.add("lizhen3");
+//        arrayList.add("lizhen4");
+        System.out.println("======================I am 8761!!!");
+        return "hello I am 8761";
     }
 }
